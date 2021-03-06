@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>labbook</title>
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+.jumbotron{
+	background:url(https://images8.alphacoders.com/411/411522.jpg);
+	margin-bottom:0;
+	font-family:serif;
+	color:white;
+	
+	}
+
+body{
+	background:url(https://images2.alphacoders.com/261/thumb-1920-26102.jpg);
+	
+}
+
+li{
+	font-weight:bold;
+}
+
+.navbar{
+    background-color: #1f7a1f;
+}
+
+.card{
+border-radius: 5px 5px 5px 5px;
+}
+
+.card-header{
+    padding: 12px 12px 12px 12px;
+    background-color: #4d4dff;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-body{
+    padding: 10px 10px 10px 10px;
+    background-color: lavender;
+        animation: glowing 1300ms infinite;
+
+}
+.card-footer{
+     padding: 10px 10px 10px 10px;
+    background-color: #b3b3ff;
+    border-radius: 0px 0px 5px 5px;
+    color: black;
+}
+
+footer{
+    background-color: #1f7a1f;
+    height: 50px;
+    color: white;
+    margin-top: 20px;    
+}
+
+@keyframes glowing {
+        0% {
+          background-color: black;
+          
+        }
+        50% {
+          background-color: darkgray;
+          
+        }
+        100% {
+          background-color: black;
+          
+        }
+      }
+
+
+</style>
+        </head>
+        <body>
+                <div class="jumbotron">
+                        <div class="container text-center">
+                                <h1 style="color: skyblue"><span style="color: orange">Online</span> Bookstore</h1>
+                                <p><b>We help u to gain knowledge</b></p>
+                        </div>
+                </div>
+
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Bookstore</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Help</a></li>
+
+         <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Mathematics</a></li>
+        </ul>
+      </li>
+      </ul>
+
+       <form class="navbar-form navbar-left">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-success" type="submit">
+        <i class="glyphicon glyphicon-search"></i>
+      </button>
+    </div>
+  </div>
+</form> 
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+		<div class="container">
+			<div class="row">
+				<div class ="col-sm-3">
+					<div class="card">
+						<div class="card-header">Python Programming</div>
+
+				            <div class="card-body">
+					        <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+						</div>
+
+						<div class="card-footer text-center">
+                               <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo"><b>Description</b></a>
+                               <div id="demo" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+							<button type="button" class="btn btn-success" >Add to cart</button>
+						</div>
+					</div>
+					</div>
+
+
+					<div class ="col-sm-3">
+                   <div class="card ">
+                       <div class="card-header" style="background-color: red; ">Java Programming</div>
+
+                    <div class="card-body">
+                    <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+                    </div>
+
+                    <div class="card-footer">
+                            <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo1"><b>Description</b></a>
+                               <div id="demo1" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+                           <button type="button" class="btn btn-success">Add to cart</button>
+						</div>
+				                </div>
+				 	</div>
+
+
+                    <div class ="col-sm-3">
+                    <div class="card">
+                        <div class="card-header">Python Programming</div>
+
+                                <div class="card-body">
+                            <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+                        </div>
+
+                        <div class="card-footer">
+                            <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo2"><b>Description</b></a>
+                               <div id="demo2" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+                            <button type="button" class="btn btn-success">Add to cart</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class ="col-sm-3">
+                    <div class="card">
+                        <div class="card-header" style="background-color: red;">Python Programming</div>
+
+                                <div class="card-body">
+                            <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+                        </div>
+
+                        <div class="card-footer">
+                            <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo3"><b>Description</b></a>
+                               <div id="demo3" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+                            <button type="button" class="btn btn-success">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class ="col-sm-3">
+                    <div class="card">
+                        <div class="card-header">Python Programming</div>
+
+                            <div class="card-body">
+                            <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+                        </div>
+
+                        <div class="card-footer">
+                            <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo4"><b>Description</b></a>
+                               <div id="demo4" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+                            <button type="button" class="btn btn-success" >Add to cart</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class ="col-sm-3">
+                   <div class="card ">
+                       <div class="card-header" style="background-color: red; ">Java Programming</div>
+
+                    <div class="card-body">
+                    <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+                    </div>
+
+                    <div class="card-footer">
+                            <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo5"><b>Description</b></a>
+                               <div id="demo5" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+                           <button type="button" class="btn btn-success">Add to cart</button>
+                        </div>
+                                </div>
+                    </div>
+
+
+                    <div class ="col-sm-3">
+                    <div class="card">
+                        <div class="card-header">Python Programming</div>
+
+                                <div class="card-body">
+                            <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+                        </div>
+
+                        <div class="card-footer">
+                            <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo6"><b>Description</b></a>
+                               <div id="demo6" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+                            <button type="button" class="btn btn-success">Add to cart</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div class ="col-sm-3">
+                    <div class="card">
+                        <div class="card-header" style="background-color: red;">Python Programming</div>
+
+                                <div class="card-body">
+                            <img src="https://visualhunt.com/photos/2/eyeglasses-on-open-book.jpg?s=l"class="img-responsive" style="width:100%" alt="Python">
+                        </div>
+
+                        <div class="card-footer">
+                            <a class="text-danger"href="#" data-toggle="collapse" data-target="#demo7"><b>Description</b></a>
+                               <div id="demo7" class="collapse">
+                                Price: 360rs <br>
+                                Author: Balaguruswamy
+                             </div>
+                            <button type="button" class="btn btn-success">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <footer class="container-fluid text-center">
+  <p>All rights reserved</p>  
+</footer>
+    </body>
+    </html>
