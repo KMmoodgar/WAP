@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms</title>
+
+<style type="text/css">
+	label {
+		font-weight: bold;
+	
+	}
+
+	fieldset{
+		background-color:rgba(0,255,13,0.6);
+	}
+
+	legend{
+		background-color: orange;
+	}
+
+
+</style>
+</head>
+<body style=" background: url(https://cdn-preemptive-com.s3.amazonaws.com/images/web/blog/hacker.png);">
+
+	<marquee style="color: orange" direction="right"><h2>Login To VTU Portal</h2></marquee>
+	<center>
+	<section style="background-color: grey; display: inline-block; background-color: rgba(0,247,255,0.6); border-radius: 3%; padding: 2%">
+	<form style="display: inline-block;" action="login.html">
+		<fieldset >
+			<legend ><strong>VTU Login</strong></legend>
+			<label for="uname">User</label>
+			<input type="text" name="username" id="uname" placeholder ="Enter Your User Name">
+			<br><br>
+			<label for="pwd">Password</label>
+			<input type="password" name="password" id="pwd" placeholder="Enter You Password">
+		</fieldset>
+
+		<input type="radio" name="browser" id="browser" checked="checked">
+		<label for="browser">Open in browser</label>
+		<input type="radio" name="browser" id="browser">
+		<label for="browser">Open in app</label>
+		<br><br>
+
+		<input type="checkbox" name="ftime">
+		<label for="ftime">Full Time Scholar</label>
+		
+		<input type="checkbox" name="student">
+		<label for="student">Student</label>
+		<br>
+
+		<input type="checkbox" name="ptime">
+		<label for="ptime">Part Time Scholar</label>
+		
+		<input type="checkbox" name="faculty">
+		<label for="faculty">Faculty</label>
+		<br>
+		<br>
+
+		<label for="opinion" style="float: left;">Opinion</label>
+		<textarea name="opinion" rows="5" cols="50"></textarea>
+		<br><br>
+
+		<label for="center" style="float: left;">VTU Center</label>
+		<select name="center" style="float: left;">
+			<option value="Bengaluru">Bengaluru</option>
+			<option value="Mysore">Mysore</option>
+			<option value="Belagavi">Belagavi</option>
+			<option value="Kalburgi">Kalburgi</option>
+		</select>
+		<br><br>
+
+		<label for="files" style="float: left;">Choose Path</label>
+		<input type="file" name="files" accept="image" style="float: left;">
+		<br><br>
+
+		<input type="submit" name="submit" value="Submit" style=" color: black">
+		
+	</form>
+</section>
+</center>
+</body>
+</html>
