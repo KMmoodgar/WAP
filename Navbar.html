@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Health</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+      body{
+    margin:0px;
+    padding:0px;
+    background: url(https://thenursesonja.com/wp-content/uploads/2017/09/13986.jpg);
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 110vh;
+    width:100%;
+   }
+
+   .my-navbar{
+   background-color: #286dd4;
+   }
+   
+   .nav-item .nav-link{
+       color:white;
+       font-size:13px;
+       font-family:arial;
+       font-weight: bold;
+       letter-spacing: 2px;
+       margin: 0px 10px;
+       text-transform: uppercase;
+   }
+   .mega-menu{
+       background-color: transparent;
+   }
+   .dropdown:hover .dropdown-menu{
+       display: block;
+   }
+   
+   .dropdown-menu{
+       border:none;
+   }
+
+   
+   .dropdown-item{
+       padding: 12px 40px 12px 20px;
+       font-size: 15px;
+       font-family:arial;
+       font-weight: bolder;
+       color:rgb(0, 0, 0);
+       font-weight: lighter;
+       background-color: rgba(255, 255, 255,0.9);
+       transform-origin: center;
+       animation :rotate 1.5s ease 1;
+   }
+   @keyframes rotate{
+       0%{transform: perspective(600px) rotatey(90deg); transform-origin:center;}
+       100%{transform: perspective(600px) rotatey(0deg); transform-origin:center;}
+   }
+   
+   .dropdown-item:nth-of-type(1){
+       animation-delay: 0s;
+   }
+   .dropdown-item:nth-of-type(2){
+       animation-delay: 0.1s;
+   }
+   .dropdown-item:nth-of-type(3){
+       animation-delay: 0.2s;
+   }
+   .dropdown-item:nth-of-type(4){
+       animation-delay: 0.3s;
+   }
+   .dropdown-item:nth-of-type(5){
+       animation-delay: 0.4s;
+   }
+   .dropdown-item:nth-of-type(6){
+       animation-delay: 0.5s;
+   }
+   
+   .dropdown-item:hover{
+       background-color: #0652dd;
+       color:white;
+   }
+   
+   .navbar-brand{
+       text-transform:uppercase;
+       font-family:impact;
+       font-size: 20px;
+       color:white;
+       letter-spacing: 2px;
+   }
+
+  
+    </style>
+
+  </head>
+  <body>    
+   <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg my-navbar">
+        <a class="navbar-brand" href="#"><strong>HEALTHCARE</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About us</a>
+              <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">About us</a>
+                <a class="dropdown-item" href="#">FAQs</a>
+                <a class="dropdown-item" href="#">Sign In</a>
+                <a class="dropdown-item" href="#">Sign Up</a>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">services</a>
+              <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Physical Therapy</a>
+                <a class="dropdown-item" href="#">Pediatric Services</a>
+                <a class="dropdown-item" href="#">Surgical Services</a>
+                <a class="dropdown-item" href="#">Transplant</a>
+                <a class="dropdown-item" href="#">Diagnosis</a>
+                <a class="dropdown-item" href="#">Primary Care</a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown">Departments</a>
+              <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Dental</a>
+                <a class="dropdown-item" href="#">Pediatric</a>
+                <a class="dropdown-item" href="#">Cosmetic</a>
+                <a class="dropdown-item" href="#">Cardiology</a>
+                <a class="dropdown-item" href="#">Oncology</a>
+                <a class="dropdown-item" href="#">Pathology</a>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-toggle="dropdown">Doctors</a>
+                <ul class="dropdown-menu mega-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Cardiologist</a>
+                  <a class="dropdown-item" href="#">Dentist</a>
+                  <a class="dropdown-item" href="#">Dermatologist</a>
+                  <a class="dropdown-item" href="#">Hematologist</a>
+                  <a class="dropdown-item" href="#">Neurologist</a>
+                  <a class="dropdown-item" href="#">Gynecologist</a>
+                </ul>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">blogs</a>
+              </li>
+        </ul>
+        </div>
+      </nav>
+   </div>
+</body>
+</html>
