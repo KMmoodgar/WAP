@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+</head>
+<body>
+    <script>
+        var a=1;
+        var bal=0;
+        var min_bal = 1000;
+        
+        while(a==1)
+        {
+        var ch = parseInt(prompt("Enter Your choice\n1:Deposit 2:Withdraw 3:Balance 4:Exit"));
+        if(ch==1)
+        {
+            deposit()
+        }
+        else if(ch==2)
+        {
+            if(bal==0)
+            {
+                alert("Your account is empty :( Please add amount first!")
+            }
+            else if(bal>0 && bal<=min_bal)
+            {
+                alert("Insufficient balance!")
+            }
+            else
+            {
+                withdraw()
+            }
+        }
+        else if(ch==3)
+        {
+            alert("Your balance is: "+bal+" Rs")
+        }
+        else if(ch==4)
+        {
+            break;
+        }
+        else
+        {
+            alert("Please enter a valid choice")
+        }
+    }
+
+        function deposit()
+        {
+            var dep_amt=parseInt(prompt("Enter amount to Deposit"));
+
+            function depAmt()
+            {
+                if(dep_amt>0)
+                {
+                    bal+=dep_amt;
+                    alert("Transaction successfull :)\nYour balance is: "+bal+" Rs")
+                }
+                else
+                {
+                    alert("Please enter correct amount")
+                }
+            }
+            depAmt()
+        }
+
+        function withdraw()
+        {
+            var with_amt =parseInt(prompt("Enter amount to Withdraw"));
+
+            function withAmt()
+            {
+                if(with_amt>0)
+                {
+                    bal-=with_amt;
+                    alert("Transaction successfull :)\nYour balance is: "+bal+" Rs")
+                }
+                else
+                {
+                    alert("Please enter correct amount")
+                }
+               
+            }
+            withAmt()
+        }
+    </script>
+</body>
+</html>
