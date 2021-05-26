@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Close</title>
+</head>
+<body>
+    <script>
+        var ch = parseInt(prompt("Enter your choice \n1:SGPA    2:CGPA"));
+
+        if (ch==1)
+        {
+            sgpa();
+        }
+        if (ch==2)
+        {
+            cgpa();
+        }
+
+        function sgpa()
+        {
+            var sub = ["WAP","CN","OOP","LSS","MFCA"]
+            var len = sub.length;
+            var credits = new Array(len);
+
+            for(i=0;i<len;i++)
+            {
+                credits[i] = parseInt(prompt("Enter credits obtained in "+sub[i]));
+            }
+
+            var total = parseInt(prompt("Enter total credits: "));
+
+            function calcSgpa()
+            {
+                var cr = 0;
+
+                for(i=0;i<=len;i++)
+                {
+                    cr += credits[i];
+                }
+                
+                var s = (cr/total)*10;
+                alert("Your SGPA is:"+ s); 
+            }
+            calcSgpa();
+        }
+        
+        function cgpa()
+        {
+            var sem=parseInt(prompt("Enter no of semesters"));
+	        var cred=new Array(semester);
+	        var total=new Array(semester);
+	        for(i=1;i<=sem;i++)
+	            {
+		            cred[i]=parseInt(prompt("Enter no of credits obtained in "+i+"st semester:"));
+		            total[i]=parseInt(prompt("Enter total no of credits in "+i+"st semester:"));
+	            }
+	            function calcCgpa()
+	                {
+		                var cred_sum=0;
+		                var tot_sum=0;
+		                for(i=1;i<=sem;i++)
+		                    {
+			                    cred_sum+=cred[i];
+			                    tot_sum+=total[i];
+		                    }
+		                var cgpa=(cred_sum/tot_sum)*10;
+		                alert("Your CGPA is: "+cgpa)
+	                }
+                    calcCgpa()
+        }   
+    </script>
+</body>
+</html>
